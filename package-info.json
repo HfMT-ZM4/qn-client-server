@@ -1,0 +1,38 @@
+{
+	"author" : "Fredrik Mathias Josefson",
+	"authors" : [  ],
+	"description" : "a Client and Server implemented in Java to be run as mxj objects",
+	"displayname" : "qn-client-server",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "qn-Client-Server-Overview.maxpat",
+	"max_version_max" : "none",
+	"max_version_min" : "8.1.5",
+	"name" : "qn-client-server",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "10.13.6"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "unknown"
+		}
+
+	}
+,
+	"tags" : [ "mxj", "client", "server", "tcp", "udp" ],
+	"version" : "2.0.4",
+	"website" : "http://localhost",
+	"filelist" : 	{
+		"patchers" : [ "qn-Client-Server-Overview.maxpat"],
+		"help" : [ "qn.Client.maxhelp", "qn.Server.maxhelp"],
+		"java-classes" : [ "qn.Client.class", "qn.Server.class" ],
+		"extras" : [ "qn-Client-Server-Overview.maxpat" ],
+		"templates" : [ "qn-Client-template.maxpat", "qn-Server-template.maxpat" ]
+	}
+,
+	"c74install" : 4711,
+	"installdate" : 3679032538
+}
