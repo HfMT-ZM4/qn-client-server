@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 56.0, 1166.0, 665.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 908.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,7 +59,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 82.0, 1166.0, 639.0 ],
+						"rect" : [ 0.0, 26.0, 1612.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -621,7 +621,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 507.376464999999996, 290.0, 216.000000000000057, 23.0 ]
+									"patching_rect" : [ 507.376464999999996, 290.0, 216.000000000000057, 23.0 ],
+									"text" : "Varnsen -1 \"Hello Vandelay\""
 								}
 
 							}
@@ -1998,7 +1999,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1166.0, 639.0 ],
+						"rect" : [ 0.0, 26.0, 1612.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -2750,7 +2751,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1166.0, 639.0 ],
+						"rect" : [ 0.0, 26.0, 1612.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -3786,7 +3787,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1166.0, 639.0 ],
+						"rect" : [ 0.0, 26.0, 1612.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -4591,7 +4592,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1166.0, 639.0 ],
+						"rect" : [ 0.0, 26.0, 1612.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -4974,7 +4975,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1166.0, 639.0 ],
+						"rect" : [ 0.0, 26.0, 1612.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -5041,7 +5042,7 @@
 			}
 , 			{
 				"name" : "round_trip.maxpat",
-				"bootpath" : "~/Dropbox/git_repo/akasha/HfMT/help",
+				"bootpath" : "/Users/Shared/Max 8/Packages/qn-client-server/help",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5054,7 +5055,7 @@
 			}
 , 			{
 				"name" : "concurrency.maxpat",
-				"bootpath" : "~/Dropbox/git_repo/akasha/HfMT/help",
+				"bootpath" : "/Users/Shared/Max 8/Packages/qn-client-server/help",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
