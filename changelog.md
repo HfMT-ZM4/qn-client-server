@@ -1,4 +1,9 @@
  #Changelog
+ ## 2020-08-03: Version 2.0.0.5
+ # Added - Names are now checked for only alphanumeric characters.
+ # Added - Client can now use the send_all to all other clients (including self).
+ # Changed - no min version on the OS versions in package. 
+ 
  ## 2020-07-31: Version 2.0.0.4
  # Added - UDP communication
  # Added - client to client communication
