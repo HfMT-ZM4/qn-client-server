@@ -1,4 +1,8 @@
  #Changelog
+ ## 2020-08-16: Version 2.0.0.7
+ # Changed - When checking for clientName the output is clientName and no longer name.
+
+ #Changelog
  ## 2020-08-10: Version 2.0.0.6
  # Added - Server push out name information when clients log on and off, so the other clients know about updates.
  # Added - Check that other client name is known when client is sending.
