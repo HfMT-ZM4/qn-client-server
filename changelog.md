@@ -1,4 +1,8 @@
  #Changelog
+ ## 2020-10-10: Version 2.0.0.8
+ # Added: Unicode encoder/decoder max/msp helper classes and Client example.
+ 
+ 
  ## 2020-08-16: Version 2.0.0.7
  # Changed - When checking for clientName the output is clientName and no longer name.
 
