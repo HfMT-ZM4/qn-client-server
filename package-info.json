@@ -23,7 +23,7 @@
 	}
 ,
 	"tags" : [ "mxj", "client", "server", "tcp", "udp" ],
-	"version" : "2.0.0.6",
+	"version" : "2.0.0.8",
 	"website" : "http://localhost",
 	"filelist" : 	{
 		"patchers" : [ "qn-Client-Server-Overview.maxpat"],
