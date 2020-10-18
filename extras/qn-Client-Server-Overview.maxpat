@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 40.0, 64.0, 1610.0, 952.0 ],
+		"rect" : [ 34.0, 83.0, 1340.0, 952.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -59,7 +59,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 40.0, 90.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -224,8 +224,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 61.0, 350.0, 187.0, 26.0 ],
-									"text" : "hello😁world_no_spaces"
+									"patching_rect" : [ 61.0, 350.0, 187.0, 23.0 ]
 								}
 
 							}
@@ -481,7 +480,6 @@
 					}
 ,
 					"patching_rect" : [ 1402.0, 89.0, 61.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -514,7 +512,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -898,7 +896,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -3510,7 +3508,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -4281,7 +4279,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -5318,7 +5316,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -6104,7 +6102,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -6482,7 +6480,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 34.0, 109.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -6512,6 +6510,222 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1315.0, 585.0, 150.0, 79.0 ],
+									"text" : "This client does not send keep_alives and will not reconnect. It will be disconnected and stay disconnected."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-50",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1315.0, 379.0, 150.0, 94.0 ],
+									"text" : "This client has a keep_alive_interval_seconds that is too long. It will be disconnected by server, but will reconnect."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-35",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1073.0, 576.5, 198.0, 40.0 ],
+									"text" : "Send tests, only works when connected.",
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-37",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 616.0, 698.0, 255.0, 23.0 ],
+									"text" : "disconnected tcp 127.0.0.1 60312"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 943.0, 585.0, 128.0, 23.0 ],
+									"text" : "howdy how are you?"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-44",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 880.0, 698.0, 109.0, 25.0 ],
+									"text" : "Watch result",
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-45",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 616.376465000000053, 589.0, 53.0, 22.0 ],
+									"text" : "connect"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-46",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 616.376465000000053, 638.0, 389.0, 23.0 ],
+									"text" : "mxj qn.Client 127.0.0.1 7449 @keep_alive false @reconnect false"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-47",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 690.0, 585.0, 178.0, 25.0 ],
+									"text" : "Connect to server",
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-16",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1073.0, 375.5, 198.0, 40.0 ],
+									"text" : "Send tests, only works when connected.",
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 616.0, 497.0, 255.0, 23.0 ],
+									"text" : "disconnected tcp 127.0.0.1 60336"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 943.0, 384.0, 100.0, 23.0 ],
+									"text" : "hi how are you?"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-28",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 880.0, 497.0, 109.0, 25.0 ],
+									"text" : "Watch result",
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-29",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 616.376465000000053, 388.0, 53.0, 22.0 ],
+									"text" : "connect"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-30",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 616.376465000000053, 437.0, 581.0, 23.0 ],
+									"text" : "mxj qn.Client 127.0.0.1 7449 @keep_alive true @reconnect true @keep_alive_interval_seconds 60"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-32",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 690.0, 384.0, 178.0, 25.0 ],
+									"text" : "Connect to server",
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"hidden" : 1,
 									"id" : "obj-1",
@@ -6646,7 +6860,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 616.0, 254.0, 255.0, 23.0 ],
-									"text" : "disconnected tcp 127.0.0.1 -1"
+									"text" : "disconnected tcp 127.0.0.1 60310"
 								}
 
 							}
@@ -6992,7 +7206,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.876464999999996, 254.0, 246.0, 23.0 ]
+									"patching_rect" : [ 65.876464999999996, 254.0, 246.0, 23.0 ],
+									"text" : "disconnected tcp 127.0.0.1 60336"
 								}
 
 							}
@@ -7003,7 +7218,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.876464999999996, 301.0, 164.0, 23.0 ]
+									"patching_rect" : [ 65.876464999999996, 301.0, 164.0, 23.0 ],
+									"text" : "hello how are you?"
 								}
 
 							}
@@ -7081,8 +7297,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 61.0, 194.0, 179.0, 23.0 ],
-									"text" : "mxj qn.Server 127.0.0.1 7449"
+									"patching_rect" : [ 61.0, 194.0, 485.0, 23.0 ],
+									"text" : "mxj qn.Server 127.0.0.1 7449 @keep_alive true @inactivity_threshold_seconds 20"
 								}
 
 							}
@@ -7269,6 +7485,48 @@
 									"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
 									"fontname" : "Arial Bold",
 									"hint" : "",
+									"id" : "obj-48",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 580.0, 589.0, 24.0, 22.0 ],
+									"rounded" : 60.0,
+									"text" : "10",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
+									"id" : "obj-33",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 580.0, 388.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "9",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 1.0, 0.658824, 0.14902, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
 									"id" : "obj-42",
 									"ignoreclick" : 1,
 									"legacytextcolor" : 1,
@@ -7340,6 +7598,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"midpoints" : [ 952.5, 421.5, 625.876465000000053, 421.5 ],
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"midpoints" : [ 78.5, 752.0, 39.0, 752.0, 39.0, 177.0, 70.5, 177.0 ],
 									"source" : [ "obj-26", 0 ]
@@ -7356,9 +7622,32 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 1 ],
+									"midpoints" : [ 766.376465000000053, 485.5, 861.5, 485.5 ],
+									"source" : [ "obj-30", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"midpoints" : [ 75.376464999999996, 444.0, 39.0, 444.0, 39.0, 177.0, 70.5, 177.0 ],
 									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"midpoints" : [ 952.5, 622.5, 625.876465000000053, 622.5 ],
+									"source" : [ "obj-38", 0 ]
 								}
 
 							}
@@ -7372,7 +7661,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
-									"midpoints" : [ 110.5, 234.0, 463.5, 234.0 ],
+									"midpoints" : [ 187.0, 234.0, 463.5, 234.0 ],
 									"order" : 0,
 									"source" : [ "obj-41", 1 ]
 								}
@@ -7389,7 +7678,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 1 ],
-									"midpoints" : [ 110.5, 235.0, 302.376464999999996, 235.0 ],
+									"midpoints" : [ 187.0, 235.0, 302.376464999999996, 235.0 ],
 									"order" : 1,
 									"source" : [ "obj-41", 1 ]
 								}
@@ -7399,6 +7688,21 @@
 								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-37", 1 ],
+									"midpoints" : [ 718.376465000000053, 686.5, 861.5, 686.5 ],
+									"source" : [ "obj-46", 1 ]
 								}
 
 							}
@@ -7466,7 +7770,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -8443,7 +8747,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -9794,7 +10098,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -11112,7 +11416,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -11874,7 +12178,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -13583,7 +13887,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1610.0, 926.0 ],
+						"rect" : [ 0.0, 26.0, 1340.0, 926.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -13665,15 +13969,15 @@
 			}
 , 			{
 				"name" : "unicode_encoder.maxpat",
-				"bootpath" : "~/Dropbox/git_repo/akasha/HfMT/help",
-				"patcherrelativepath" : "../help",
+				"bootpath" : "/Users/Shared/Max 8/Packages/qn-client-server/help",
+				"patcherrelativepath" : "../../../../../../Shared/Max 8/Packages/qn-client-server/help",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "unicode_decoder.maxpat",
-				"bootpath" : "~/Dropbox/git_repo/akasha/HfMT/help",
-				"patcherrelativepath" : "../help",
+				"bootpath" : "/Users/Shared/Max 8/Packages/qn-client-server/help",
+				"patcherrelativepath" : "../../../../../../Shared/Max 8/Packages/qn-client-server/help",
 				"type" : "JSON",
 				"implicit" : 1
 			}

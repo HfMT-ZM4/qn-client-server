@@ -1,4 +1,10 @@
  #Changelog
+ ## 2020-10-18: Version 2.0.0.9
+ # Added: Server side automatic disconnect on network inactivity.
+ # Added: Client side sends Logoff when disconnecting.
+
+
+
  ## 2020-10-10: Version 2.0.0.8
  # Added: Unicode encoder/decoder max/msp helper classes and Client example.
  
