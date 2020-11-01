@@ -1,4 +1,9 @@
  #Changelog
+ ## 2020-11-01: Version 2.0.0.10
+ # Added: setting udp send+receive buffer size.
+ # Fixed: UDP keep-alive check fixed initial value and changed to always send UDP pings.
+
+ #Changelog
  ## 2020-10-18: Version 2.0.0.9
  # Added: Server side automatic disconnect on network inactivity.
  # Added: Client side sends Logoff when disconnecting.
