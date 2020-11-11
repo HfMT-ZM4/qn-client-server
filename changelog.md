@@ -1,4 +1,10 @@
  #Changelog
+ ## 2020-11-10: Version 2.0.0.11
+ # Added: Logger for debugging. Debug turned on and written to /tmp/qn-client-server.log
+ # Added: MulticastPublisher and MulticastReceiver to let local clients know about servers.
+ # Added: Possible way to override VERSION (usable for testing).
+ 
+ 
  ## 2020-11-01: Version 2.0.0.10
  # Added: setting udp send+receive buffer size.
  # Fixed: UDP keep-alive check fixed initial value and changed to always send UDP pings.

@@ -20,3 +20,18 @@ Older Version compatibility:
 
 ## Installation:
 Use Max 8's package manager or Drag the folder in one of Max's supported package folder.
+
+## Logging
+Logback is used for logging. The included logback.xml is already packaged in the jar-file and used. 
+To override this configuration in the file max.java.config.txt specify the following:
+max.jvm.option -Dlogback.configurationFile=<PATH_TO_FILE>
+For example: 
+/Users/Shared/Max\ 8/Packages/qn-client-server/logback.xml
+Note that the space needs to be escaped.
+
+## Local Auto-discovery
+This is experimental functionality. If indented to be used the following configuration is needed:
+max.jvm.option -Djava.net.preferIPv4Stack=true
+
+## Overriding Version
+For test purposes it is possible to override the version by setting: max.jvm.option -DQN_CLIENT_SERVER_VERSION=2.0.0.10
