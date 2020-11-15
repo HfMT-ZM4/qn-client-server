@@ -1,4 +1,7 @@
  #Changelog
+ ## 2020-11-15: Version 2.0.0.12
+ # Added: Method in server to disconnect clients by name: "disconnect name"
+
  ## 2020-11-10: Version 2.0.0.11
  # Added: Logger for debugging. Debug turned on and written to /tmp/qn-client-server.log
  # Added: MulticastPublisher and MulticastReceiver to let local clients know about servers.
