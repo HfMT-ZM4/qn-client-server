@@ -1,4 +1,9 @@
  #Changelog
+ ## 2020-11-23: Version 2.0.0.13
+ # Added: Information output with LogoffSuccess [name] when client is logged off.
+ # Changed: MulticastReceiver now has configuration and is turned off by default.
+ # Changed: logs are rotated out every hour by default.
+
  ## 2020-11-15: Version 2.0.0.12
  # Added: Method in server to disconnect clients by name: "disconnect name"
 
