@@ -1,4 +1,10 @@
  #Changelog
+ ## 2020-12-06: Version 2.0.0.14
+ # Fixed: If there is nothing in the buffer and a bang triggered a send - then an empty string was sent without new line - this resulted in that timestamp was included in result - fix: remove all timestamps and do not send empty buffer.
+ # Changed: Timestamps are now turned off by default
+ # Added: block/unblock can be done on Name
+ # Added: now possible to configure time to delay for disconnect message.
+
  ## 2020-11-23: Version 2.0.0.13
  # Added: Information output with LogoffSuccess [name] when client is logged off.
  # Changed: MulticastReceiver now has configuration and is turned off by default.
