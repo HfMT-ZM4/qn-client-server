@@ -1,4 +1,12 @@
  #Changelog
+ ## 2021-01-17: Version 2.0.0.15
+ # Fixed: As ServeriKeepAlive was introduced to take down inactive connections - some activity is also tracked when something is sent (as the client will not send ping when something is received).
+ # Fixed: A race condition on the client side - earlier resulted in that if this happened some protocol control data could slip through - like P0NG and others.
+ # Changed: Removed the extra newlines around the protocol transmission.
+ # Changed: Reading string from socket - checks contains instead of exact match, to stabilize performance
+ 
+ 
+ 
  ## 2020-12-06: Version 2.0.0.14
  # Fixed: If there is nothing in the buffer and a bang triggered a send - then an empty string was sent without new line - this resulted in that timestamp was included in result - fix: remove all timestamps and do not send empty buffer.
  # Changed: Timestamps are now turned off by default
