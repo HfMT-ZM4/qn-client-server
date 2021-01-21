@@ -25,47 +25,63 @@
     </metadatalist>
     <!--INLETS-->
     <inletlist>
-        <inlet id="0" type="INLET_TYPE">
+        <inlet id="0" type="all">
             <digest>
-                "Data to send, connect/disconnect, address (String), port #, bang (send buffered data)"
+                Data to send on format (ip port data / name -1 data), start/stop, port #, bang (send buffered data)
             </digest>
             <description>
-                TEXT_HERE
+                Data to send on format (ip port data / name -1 data), start/stop, port #, bang (send buffered data)
             </description>
         </inlet>
-        <inlet id="1" type="INLET_TYPE">
+        <inlet id="1" type="all">
             <digest>
                 (list) buffered sending, bang to flush.
             </digest>
             <description>
-                TEXT_HERE
+                (list) buffered sending, bang to flush.
+            </description>
+        </inlet>
+        <inlet id="2" type="all">
+            <digest>
+                Data to send on format (ip port data/ name -1 data), sent over UDP.
+            </digest>
+            <description>
+                Data to send on format (ip port data/ name -1 data), sent over UDP.
             </description>
         </inlet>
     </inletlist>
     <!--OUTLETS-->
     <outletlist>
-        <outlet id="0" type="OUTLET_TYPE">
+        <outlet id="0" type="all">
             <digest>
-                Received data.
+                (list) Received data over TCP.
             </digest>
             <description>
-                TEXT_HERE
+                (list) Received data over TCP. Can include sender see <m>include_address_in_data</m>
             </description>
         </outlet>
-        <outlet id="1" type="OUTLET_TYPE">
+        <outlet id="1" type="all">
             <digest>
-                (list/int) Info (connect/disconnect) or Error Code (0 success).
+                (list/int) Info (connected/disconnected/started/stopped/LogonSuccess/0 name) or Error Code (0 success).
             </digest>
             <description>
-                TEXT_HERE
+                (list/int) Info (connected/disconnected/started/stopped/LogonSuccess/0 name) or Error Code (0 success).
             </description>
         </outlet>
-        <outlet id="2" type="OUTLET_TYPE">
+        <outlet id="2" type="all">
             <digest>
                 (list) Used if timestamps are sent ((int)timestamp  latency).
             </digest>
             <description>
-                TEXT_HERE
+                (list) Used if timestamps are sent ((int)timestamp  latency).
+            </description>
+        </outlet>
+        <outlet id="3" type="all">
+            <digest>
+                (list) Received data over UDP.
+            </digest>
+            <description>
+                (list) Received data over UDP. Can include sender see <m>include_address_in_data</m>
             </description>
         </outlet>
     </outletlist>
@@ -73,63 +89,109 @@
     <objarglist>
         <objarg name="address" optional="1" type="string">
             <digest>
-                IP address of server to connect to.
+                IP address of server.
             </digest>
             <description>
-                IP address of server to connect to.
+                IP address of server. Default 0.0.0.0
             </description>
         </objarg>
-        <objarg name="port" type="int">
+        <objarg name="port" optional="1" type="int">
             <digest>
-                Port of server to connect to.
+                Port of server. 
             </digest>
             <description>
-                Port of server to connect to.
+                Port of server. Default 4711.
             </description>
         </objarg>
     </objarglist>
     <!--MESSAGES-->
-    <!--methodlist>
+     <methodlist>
+        <method name="start">
+            <arglist />
+            <digest>
+                Starts the server.
+            </digest>
+            <description>
+                Starts the server.
+            </description>
+        </method>
+        <method name="stop">
+            <arglist />
+            <digest>
+                Stops the server.
+            </digest>
+            <description>
+                Stops the server.
+            </description>
+        </method>
+        <method name="address">
+            <arglist>
+                <arg name="ip" optional="0" type="string" />
+            </arglist>
+            <digest>
+                Sets the address of the server.
+            </digest>
+            <description>
+                Sets the address of the server. Can not be set if already started.
+            </description>
+        </method>
+        <method name="port">
+            <arglist>
+                <arg name="number" optional="0" type="int" />
+            </arglist>
+            <digest>
+                Sets the port of the server.
+            </digest>
+            <description>
+                Sets the port of the server. Can not be done if already connected.
+            </description>
+        </method>
+        <method name="getClients">
+            <arglist />
+            <digest>
+                Gets information about connected clients.
+            </digest>
+            <description>
+                Gets information about connected clients. Information via outlet 1 on format: clients ip1 tcp_port1 udp_port1 name1, ... ipN tcp_portN upd_portN nameN 
+            </description>
+        </method>
+        <method name="getNames">
+            <arglist />
+            <digest>
+                Gets all the names of connected clients. Use on inlet 0 for tcp and inlet 2 for udp.
+            </digest>
+            <description>
+                Gets all the names of connected clients. Use on inlet 0 for tcp and inlet 2 for udp. Format name tcp|udp name1,...,nameN
+            </description>
+        </method>
+        <method name="getIps">
+            <arglist />
+            <digest>
+                Gets all the known ips that the server can start to listen on.
+            </digest>
+            <description>
+                Gets all the known ips that the server can start to listen on. Use 0.0.0.0 to listen to all interfaces/ips at once.
+            </description>
+        </method>
+        <method name="disconnect">
+            <arglist>
+                <arg name="address/name" optional="0" type="string" />
+                <arg name="port" optional="1" type="int" />
+            </arglist>
+            <digest>
+                Disconnect a client with given address and port or name.
+            </digest>
+            <description>
+                Disconnect a client with given address and port or name.
+            </description>
+        </method>   
         <method name="bang">
             <arglist />
             <digest>
-                Route output based on a match
+                Sends data in buffer.
             </digest>
             <description>
-                Performs the same function as <m>anything</m>.
-            </description>
-        </method>
-        <method name="int">
-            <arglist>
-                <arg name="input" optional="0" type="int" />
-            </arglist>
-            <digest>
-                Route output based on a match
-            </digest>
-            <description>
-                Performs the same function as <m>anything</m>.
-            </description>
-        </method>
-        <method name="float">
-            <arglist>
-                <arg name="input" optional="0" type="float" />
-            </arglist>
-            <digest>
-                Route output based on a match
-            </digest>
-            <description>
-                Performs the same function as <m>anything</m>.
-            </description>
-        </method>
-        <method name="list">
-            <arglist>
-                <arg name="input" optional="0" type="list" />
-            </arglist>
-            <digest>
-                Route output based on a match
-            </digest>
-            <description>
-                Performs the same function as <m>anything</m>.
+                Sends data in buffer.
             </description>
         </method>
         <method name="anything">
@@ -137,14 +199,101 @@
                 <arg name="input" optional="0" type="list" />
             </arglist>
             <digest>
-                Route output based on a match
+                Sends data over network either as TCP (inlet 0) or UDP (inled 2)
             </digest>
             <description>
-                If the first item of the message is the same as one of the arguments of <o>route</o>, the rest of the message is sent out the outlet that corresponds to that argument. If the first item does not match any of the arguments, the entire message is passed out the rightmost outlet.
+                Sends data over network to client on given format:
+                address port data | Sends data to client with address port
+                Client_Name -1 data | Sends data to client with Client_Name
+                * -1 data | Sends data to all clients connected to the server. 
             </description>
         </method>
-    </methodlist-->
+    </methodlist>
     <!--ATTRIBUTES-->
+    <attributelist>
+​
+        <attribute name='verbose' get='1' set='1' type='boolean/int' size='1' >
+            <digest>If true more info is output to Max window, default is false.</digest>
+            <description>If true more info is output to Max window, default is false.</description>
+        </attribute>
+​
+        <attribute name='debug' get='1' set='1' type='boolean/int' size='1' >
+            <digest>If true more info is output to Max window, default is false.</digest>
+            <description>If true more info is output to Max window, default is false.</description>
+        </attribute>
+​
+        <attribute name='raw_bytes' get='1' set='1' type='boolean/int' size='1' >
+            <digest>If true bytes are sent over the network, default is false.</digest>
+            <description>If true bytes are sent over the network, default is false.</description>
+        </attribute>
+        
+        <attribute name='charset' get='1' set='1' type='string' size='1' >
+            <digest>Encoding used for sending and receiving data, default is UTF-8.</digest>
+            <description>Encoding used for sending and receiving data, default is UTF-8.</description>
+        </attribute>
+        
+        <attribute name='buffer_size' get='1' set='1' type='int' size='1' >
+            <digest>Size of buffer used for sending and receiving, default is 65536.</digest>
+            <description>Size of buffer used for sending and receiving, default is 65536.</description>
+        </attribute>
+        
+        <attribute name='keep_alive' get='1' set='1' type='boolean/int' size='1' >
+            <digest>Used to set application level keep-alive, default is true.</digest>
+            <description>Used to set application level keep-alive, default is true.</description>
+        </attribute>
+        
+        <attribute name='keep_alive_interval_seconds' get='1' set='1' type='int' size='1' >
+            <digest>Interval in seconds at which keep-alives are sent, default is 30.</digest>
+            <description>Rate in seconds at which keep-alives are sent, default is 30.</description>
+        </attribute>
+        
+        <attribute name='keep_alive_delay_seconds' get='1' set='1' type='int' size='1' >
+            <digest>Delay to wait until keep-alives are started, default is 0.</digest>
+            <description>Delay to wait until keep-alives are started, default is 0.</description>
+        </attribute>
+        
+        <attribute name='inactivity_threshold_seconds' get='1' set='1' type='int' size='1' >
+            <digest>Time in seconds of inactivity at which the server disconnects the client.</digest>
+            <description>Time in seconds of inactivity at which the server disconnects the client, default is 120. Only used if <m>keep_alive</m> is true</description>
+        </attribute>
+        
+        <attribute name='block_timeout_millis' get='1' set='1' type='int' size='1' >
+            <digest>Timeout in milliseconds to block on network, default is 15.</digest>
+            <description>Timeout in milliseconds to block on network, default is 15.</description>
+        </attribute>​
+        <attribute name='send_timestamps' get='1' set='1' type='boolean/int' size='1' >
+            <digest>Set if timestamps should be sent from client to server, default is false.</digest>
+            <description>Set if timestamps should be sent from client to server, default is false.</description>
+        </attribute>​
+        <attribute name='high_priority' get='1' set='1' type='boolean/int' size='1' >
+            <digest>Set if client should output data to Max in high_priority thread, default is false.</digest>
+            <description>Set if client should output data to Max in high_priority thread, default is false.</description>
+        </attribute>
+        <attribute name='include_address_in_data' get='1' set='1' type='boolean/int' size='1' >
+            <digest>Set and client will report address when data is output (outlet 0), default is false.</digest>
+            <description>Set and client will report address when data is output (outlet 0), default is false.</description>
+        </attribute>
+        <attribute name='include_udp_protocol' get='1' set='1' type='boolean/int' size='1' >
+            <digest>Turns on UDP protocol, default is false.</digest>
+            <description>Turns on UDP protocol, default is false.</description>
+        </attribute>
+        <attribute name='name' get='1' set='1' type='string' size='1' >
+            <digest>Sets a name of the client, default is null.</digest>
+            <description>Sets a name of the client, default is null.</description>
+        </attribute>
+        <attribute name='forward_disabled' get='1' set='1' type='boolean/int' size='1' >
+            <digest>If true then client to client communication is disabled.</digest>
+            <description>Set to false to allow client to client communication, default is true.</description>
+        </attribute>
+        <attribute name='network_buffer_size' get='1' set='1' type='int' size='1' >
+            <digest>Network buffer size used, default is 1048576.</digest>
+            <description>Network buffer size used, default is 1048576.</description>
+        </attribute>
+        <attribute name='multicast' get='1' set='1' type='boolean/int' size='1' >
+            <digest>Turns on multicast address, default is false.</digest>
+            <description>Turns on multicast address, default is false.</description>
+        </attribute>​
+    </attributelist>
     <!--EXAMPLE-->
     <!--examplelist>
         <example img="route.png" caption="Arguments assign names or numbers to the outlets, and route the input to the correct outlet" />

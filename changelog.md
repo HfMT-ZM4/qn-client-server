@@ -1,4 +1,7 @@
  #Changelog
+ ## 2021-01-21: Version 2.0.0.16
+ # Fixed: Documentation and help files.
+
  ## 2021-01-17: Version 2.0.0.15
  # Fixed: As ServeriKeepAlive was introduced to take down inactive connections - some activity is also tracked when something is sent (as the client will not send ping when something is received).
  # Fixed: A race condition on the client side - earlier resulted in that if this happened some protocol control data could slip through - like P0NG and others.
