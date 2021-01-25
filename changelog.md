@@ -1,4 +1,11 @@
  #Changelog
+ ## 2021-01-25: Version 2.0.0.17
+ # Fixed: Client threads were leaking on keep-alive.
+ # Fixed: Warning is output if multiple packages are found on classpath.
+ # Fixed: Server removes client on incorrect logon.
+ # Changed: Only the major version is checked when logging on. 
+ # Changed: Turned off the logging by default to Max Console.
+
  ## 2021-01-21: Version 2.0.0.16
  # Fixed: Documentation and help files.
 
