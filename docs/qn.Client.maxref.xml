@@ -239,13 +239,13 @@
         </attribute>
 ​
         <attribute name='debug' get='1' set='1' type='boolean/int' size='1' >
-            <digest>If true more info is output to Max window, default is false.</digest>
-            <description>If true more info is output to Max window, default is false.</description>
+            <digest>Deprecated, use the log file instead. If true more info is output to Max window, default is false.</digest>
+            <description>Deprecated, use the log file instead. If true more info is output to Max window, default is false.</description>
         </attribute>
 ​
         <attribute name='raw_bytes' get='1' set='1' type='boolean/int' size='1' >
-            <digest>If true bytes are sent over the network, default is false.</digest>
-            <description>If true bytes are sent over the network, default is false.</description>
+            <digest>Deprecated: No longer supported. If true bytes are sent over the network, default is false.</digest>
+            <description>Deprecated: No longer supported. If true bytes are sent over the network, default is false.</description>
         </attribute>
         
         <attribute name='charset' get='1' set='1' type='string' size='1' >
@@ -321,6 +321,14 @@
             <digest>Turns on multicast address, default is false.</digest>
             <description>Turns on multicast address, default is false.</description>
         </attribute>
+        <attribute name='multicast_address' get='1' set='1' type='String' size='1' >
+            <digest>Sets the multicast address. Default is: 228.5.6.7</digest>
+            <description>Sets the multicast address. Default is: 228.5.6.7</description>
+        </attribute>
+        <attribute name='multicast_port' get='1' set='1' type='int' size='1' >
+            <digest>Sets the multicast port. Default is: 6789</digest>
+            <description>Sets the multicast port. Default is: 6789</description>
+        </attribute>        
         <attribute name='logoff_timeout_seconds' get='1' set='1' type='int' size='1' >
             <digest>Time to wait for logoff acknowledgement, default is 1.</digest>
             <description>Time to wait for logoff acknowledgement, default is 1.</description>

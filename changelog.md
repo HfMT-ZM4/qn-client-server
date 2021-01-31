@@ -1,4 +1,11 @@
  #Changelog
+ ## 2021-01-31: Version 3.0.0.0
+ # Fixed: Cleanup and re-factor.
+ # Changed: debug removed from max console - use the logfile instead.
+ # Changed: deprecating the raw_data, still possible to use, but planned to be removed.
+ # Fixed: Multicast can now be configurable on multicast, multicast_addres, multicast_port
+ # Fixed: Server can now use port 0 for dynamic selecting port and getPort to know which one was used.
+
  ## 2021-01-25: Version 2.0.0.17
  # Fixed: Client threads were leaking on keep-alive.
  # Fixed: Warning is output if multiple packages are found on classpath.
