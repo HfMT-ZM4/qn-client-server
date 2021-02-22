@@ -1,4 +1,8 @@
  #Changelog
+ ## 2021-02-2: Version 3.0.0.1
+ # Added: client is reporting reason for failure to log in to outlet 1: Format and report are: "LoginFailed (NoReason|ClientBlocked|ClientNameTaken|InvalidVersion) (tcp|udp)"
+ # Changed: round_trip helper maxpatch for simplify multiple client tests.
+ 
  ## 2021-01-31: Version 3.0.0.0
  # Fixed: Cleanup and re-factor.
  # Changed: debug removed from max console - use the logfile instead.
