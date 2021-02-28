@@ -1,5 +1,10 @@
  #Changelog
- ## 2021-02-2: Version 3.0.0.1
+ ## 2021-02-28: Version 3.0.0.2
+ # Changed: it is possible to use '/', '-' and '_' as client names.
+ # Added: it is possible to send command X* where X is a number of characters. This will be the same command as * "send to all", but only send to the clients whose names starts with X.
+ # Added: name_space example added in overview patch to show how new features are used.
+ 
+ ## 2021-02-02: Version 3.0.0.1
  # Added: client is reporting reason for failure to log in to outlet 1: Format and report are: "LoginFailed (NoReason|ClientBlocked|ClientNameTaken|InvalidVersion) (tcp|udp)"
  # Changed: round_trip helper maxpatch for simplify multiple client tests.
  
