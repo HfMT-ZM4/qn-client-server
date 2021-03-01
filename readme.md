@@ -45,47 +45,46 @@ For test purposes it is possible to override the version by setting: max.jvm.opt
     //The size of the buffer used.<br/>
     protected int buffer_size = 65536;<br/>
     //The size of the network buffer used.<br/>
-    protected int network_buffer_size = 1048576;<br/>   
+    protected int network_buffer_size = 1048576;<br/>
     //Set if keep-alive should be used<br/>
     protected boolean keep_alive = true;<br/>
     //Set if keep-alive interval in seconds<br/>
-   protected int keep_alive_interval_seconds = 30;<br/>    
+   protected int keep_alive_interval_seconds = 30;<br/>
     //Set if keep-alive delay in seconds<br/>
     protected int keep_alive_delay_seconds = 0;<br/>
     //Set inactivity threshold for server taking down connection.<br/>
-    protected int inactivity_threshold_seconds = 120;
-    //Set to true and the client will try to reconnect when connection is lost.
-    protected boolean reconnect = true;
-    //Set to true and the client will disconnect completely after a given number of reconnect attempts.
-    protected boolean keep_alive_disconnect = true;
-    //Blocking timeout on the network
-    protected int block_timeout_millis = 15;
-    //Sends TimeStamps on every message.
-    protected boolean send_timestamps = false;
-    //Verbose logging is done
-    protected boolean verbose = false;
-    //Output is done over the high_priority outlet
-    protected boolean high_priority = false;
-    //Debugging is done.
-	protected boolean debug = false;
-    //includes the address in data when forwarded to max
-    protected boolean include_address_in_data = false;
-    //starts the udp client.
-    protected boolean include_udp_protocol = false;
-    //Name used for logging in.
-    protected String name = null;
-    //If udp is sent to other client is can be forwarded via server.
-    protected boolean forward_udp_via_server = true;
-    //The possibility to not forward data between clients.
-    protected boolean forward_disabled = true;
-    //The possibility to not include data to the client sending to all other clients
-    protected boolean exclude_self_in_others = false;
-    //Use multicast for publish and receive server address
-    protected boolean multicast = false;
-    //The multicast address
-    protected String multicast_address = "228.5.6.7";
-    //The multicast port
-    protected int multicast_port = 6789;
-    
-    //Set if keep-alive delay in seconds
-    protected int logoff_timeout_seconds = 1;
+    protected int inactivity_threshold_seconds = 120;<br/>
+    //Set to true and the client will try to reconnect when connection is lost.<br/>
+    protected boolean reconnect = true;<br/>
+    //Set to true and the client will disconnect completely after a given number of reconnect attempts.<br/>
+    protected boolean keep_alive_disconnect = true;<br/>
+    //Blocking timeout on the network<br/>
+    protected int block_timeout_millis = 15;<br/>
+    //Sends TimeStamps on every message.<br/>
+    protected boolean send_timestamps = false;<br/>
+    //Verbose logging is done<br/>
+    protected boolean verbose = false;<br/>
+    //Output is done over the high_priority outlet<br/>
+    protected boolean high_priority = false;<br/>
+    //Debugging is done.<br/>
+    protected boolean debug = false;<br/>
+    //includes the address in data when forwarded to max<br/>
+    protected boolean include_address_in_data = false;<br/>
+    //starts the udp client.<br/>
+    protected boolean include_udp_protocol = false;<br/>
+    //Name used for logging in.<br/>
+    protected String name = null;<br/>
+    //If udp is sent to other client is can be forwarded via server.<br/>
+    protected boolean forward_udp_via_server = true;<br/>
+    //The possibility to not forward data between clients.<br/>
+    protected boolean forward_disabled = true;<br/>
+    //The possibility to not include data to the client sending to all other clients<br/>
+    protected boolean exclude_self_in_others = false;<br/>
+    //Use multicast for publish and receive server address<br/>
+    protected boolean multicast = false;<br/>
+    //The multicast address<br/>
+    protected String multicast_address = "228.5.6.7";<br/>
+    //The multicast port<br/>
+    protected int multicast_port = 6789;<br/>
+    //Set if keep-alive delay in seconds<br/>
+    protected int logoff_timeout_seconds = 1;<br/>
