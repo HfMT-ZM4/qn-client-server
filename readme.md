@@ -38,10 +38,8 @@ For test purposes it is possible to override the version by setting: max.jvm.opt
 
 ## Defaults
 
->  //If true, then data will be sent as raw bytes, as is done by sadam.tcpServer/sadam.tcpClient.<br/>
-    protected boolean raw_bytes = false;<br/>
-    //The CharSet to use when encoding data sent and received.<br/>
-    protected String charset = "UTF-8";<br/>
+>   //The CharSet to use when encoding data sent and received.<br/>
+    protected String <span style="color:blue">charset = "UTF-8";</span><br/>
     //The size of the buffer used.<br/>
     protected int buffer_size = 65536;<br/>
     //The size of the network buffer used.<br/>
