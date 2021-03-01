@@ -38,18 +38,18 @@ For test purposes it is possible to override the version by setting: max.jvm.opt
 
 ## Defaults
 
->>    //If true, then data will be sent as raw bytes, as is done by sadam.tcpServer/sadam.tcpClient.
->>    protected boolean raw_bytes = false;
->>    //The CharSet to use when encoding data sent and received.
->>    protected String charset = "UTF-8";
->>    //The size of the buffer used.
->>    protected int buffer_size = 65536;
->>    //The size of the network buffer used.
->>    protected int network_buffer_size = 1048576;   
->>    //Set if keep-alive should be used
->>    protected boolean keep_alive = true;
->>    //Set if keep-alive interval in seconds
->>   protected int keep_alive_interval_seconds = 30;    
+>>  //If true, then data will be sent as raw bytes, as is done by sadam.tcpServer/sadam.tcpClient.<br/>
+    protected boolean raw_bytes = false;
+    //The CharSet to use when encoding data sent and received.
+    protected String charset = "UTF-8";
+    //The size of the buffer used.
+    protected int buffer_size = 65536;
+    //The size of the network buffer used.
+    protected int network_buffer_size = 1048576;   
+    //Set if keep-alive should be used
+    protected boolean keep_alive = true;
+    //Set if keep-alive interval in seconds
+   protected int keep_alive_interval_seconds = 30;    
     //Set if keep-alive delay in seconds
     protected int keep_alive_delay_seconds = 0;
     //Set inactivity threshold for server taking down connection.
