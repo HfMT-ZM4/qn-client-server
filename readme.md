@@ -30,7 +30,7 @@ For example:
 Note that the space needs to be escaped.
 
 ## Local Auto-discovery
-This is experimental functionality. If indented to be used the following configuration is needed:
+This is experimental functionality. If intented to be used the following configuration is needed:
 max.jvm.option -Djava.net.preferIPv4Stack=true
 
 ## Overriding Version
