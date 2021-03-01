@@ -37,9 +37,10 @@ max.jvm.option -Djava.net.preferIPv4Stack=true
 For test purposes it is possible to override the version by setting: max.jvm.option -DQN_CLIENT_SERVER_VERSION=2.0.0.10
 
 ## Defaults
-
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
 >   //The CharSet to use when encoding data sent and received.<br/>
     protected String <span style="color:blue">charset = "UTF-8";</span><br/>
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
     //The size of the buffer used.<br/>
     protected int buffer_size = 65536;<br/>
     //The size of the network buffer used.<br/>
