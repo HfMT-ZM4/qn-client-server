@@ -37,53 +37,51 @@ max.jvm.option -Djava.net.preferIPv4Stack=true
 For test purposes it is possible to override the version by setting: max.jvm.option -DQN_CLIENT_SERVER_VERSION=2.0.0.10
 
 ## Defaults
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
 >   //The CharSet to use when encoding data sent and received.<br/>
-    protected String <span style="color:blue">charset = "UTF-8";</span><br/>
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
+    protected String __charset = "UTF-8";__<br/>
     //The size of the buffer used.<br/>
-    protected int buffer_size = 65536;<br/>
+    protected int __buffer_size = 65536__;<br/>
     //The size of the network buffer used.<br/>
-    protected int network_buffer_size = 1048576;<br/>
+    protected int __network_buffer_size = 1048576__;<br/>
     //Set if keep-alive should be used<br/>
-    protected boolean keep_alive = true;<br/>
+    protected boolean __keep_alive = true__;<br/>
     //Set if keep-alive interval in seconds<br/>
-    protected int keep_alive_interval_seconds = 30;<br/>
+    protected int __keep_alive_interval_seconds = 30__;<br/>
     //Set if keep-alive delay in seconds<br/>
-    protected int keep_alive_delay_seconds = 0;<br/>
+    protected int __keep_alive_delay_seconds = 0__;<br/>
     //Set inactivity threshold for server taking down connection.<br/>
-    protected int inactivity_threshold_seconds = 120;<br/>
+    protected int __inactivity_threshold_seconds = 120__;<br/>
     //Set to true and the client will try to reconnect when connection is lost.<br/>
-    protected boolean reconnect = true;<br/>
+    protected boolean __reconnect = true__;<br/>
     //Set to true and the client will disconnect completely after a given number of reconnect attempts.<br/>
-    protected boolean keep_alive_disconnect = true;<br/>
+    protected boolean __keep_alive_disconnect = true__;<br/>
     //Blocking timeout on the network<br/>
-    protected int block_timeout_millis = 15;<br/>
+    protected int __block_timeout_millis = 15__;<br/>
     //Sends TimeStamps on every message.<br/>
-    protected boolean send_timestamps = false;<br/>
+    protected boolean __send_timestamps = false__;<br/>
     //Verbose logging is done<br/>
-    protected boolean verbose = false;<br/>
+    protected boolean __verbose = false__;<br/>
     //Output is done over the high_priority outlet<br/>
-    protected boolean high_priority = false;<br/>
+    protected boolean __high_priority = false__;<br/>
     //Debugging is done.<br/>
-    protected boolean debug = false;<br/>
+    protected boolean __debug = false__;<br/>
     //includes the address in data when forwarded to max<br/>
-    protected boolean include_address_in_data = false;<br/>
+    protected boolean __include_address_in_data = false__;<br/>
     //starts the udp client.<br/>
-    protected boolean include_udp_protocol = false;<br/>
+    protected boolean __include_udp_protocol = false__;<br/>
     //Name used for logging in.<br/>
-    protected String name = null;<br/>
+    protected String __name = null__;<br/>
     //If udp is sent to other client is can be forwarded via server.<br/>
-    protected boolean forward_udp_via_server = true;<br/>
+    protected boolean __forward_udp_via_server = true__;<br/>
     //The possibility to not forward data between clients.<br/>
-    protected boolean forward_disabled = true;<br/>
+    protected boolean __forward_disabled = true__;<br/>
     //The possibility to not include data to the client sending to all other clients<br/>
-    protected boolean exclude_self_in_others = false;<br/>
+    protected boolean __exclude_self_in_others = false__;<br/>
     //Use multicast for publish and receive server address<br/>
-    protected boolean multicast = false;<br/>
+    protected boolean __multicast = false__;<br/>
     //The multicast address<br/>
-    protected String multicast_address = "228.5.6.7";<br/>
+    protected String __multicast_address = "228.5.6.7"__;<br/>
     //The multicast port<br/>
-    protected int multicast_port = 6789;<br/>
+    protected int __multicast_port = 6789__;<br/>
     //Set if keep-alive delay in seconds<br/>
-    protected int logoff_timeout_seconds = 1;<br/>
+    protected int __logoff_timeout_seconds = 1__;<br/>
