@@ -1,4 +1,7 @@
  #Changelog
+ ## 2021-03-16: Version 3.0.0.3
+ # Fixed: name check is updated when clients log out.
+
  ## 2021-02-28: Version 3.0.0.2
  # Changed: it is possible to use '/', '-' and '_' as client names.
  # Added: it is possible to send command X* where X is a number of characters. This will be the same command as * "send to all", but only send to the clients whose names starts with X.
