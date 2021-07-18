@@ -1,4 +1,7 @@
  #Changelog
+ ## 2021-07-18: Version 3.0.0.4
+ # Fixed: Capturing error, in error handling in ServerConnector to make Server more robust.
+
  ## 2021-03-16: Version 3.0.0.3
  # Fixed: name check is updated when clients log out.
 
